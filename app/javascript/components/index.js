@@ -1,9 +1,9 @@
 import { render } from "react-dom";
-import { h } from "./h";
+import { raw } from "./raw";
 import { Counter } from "./Counter";
 
 render(
-  h`
+  raw`
     <h1>hello world</h1>
     <${Counter} />
   `,
