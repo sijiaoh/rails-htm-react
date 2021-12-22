@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { raw } from "./raw";
+import { RenderNum } from "./RenderNum";
 
 export function Counter() {
   const [num, setNum] = useState(0);
@@ -7,7 +8,7 @@ export function Counter() {
   return raw`
     <div>
       <button onClick=${() => setNum(num + 1)}>+</button>
-      ${num}
+      <${RenderNum} num=${num} />
     </div>
   `;
 }
