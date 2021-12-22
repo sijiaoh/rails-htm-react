@@ -1,7 +1,4 @@
 import { render } from "react-dom";
-import { createElement } from "react";
+import { h } from "./h";
 
-render(
-  createElement("h1", null, "hello world"),
-  document.getElementById("root")
-);
+render(h`<h1>hello world</h1>`, document.getElementById("root"));
